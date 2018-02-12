@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1159A37C12A22705AD4B369A5810CF8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1276EC7B00B88E70FF52E8A25BB6C799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		13A64EFBFD04779380498D4E7B4A8FED /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */; };
+		1712C1C628C3C01F2F5C14AA11844D5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		18BC048B42E116B31C759483F86580EA /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */; };
+		18C300717BE7EFF2AD4E9ACD24D82786 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */; };
+		2DDD385F3A80C4A6FFBC17C105372890 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */; };
+		40D1916697E2E43BF363DE2839C27D84 /* Pods-Assign01_LoadingViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E76144182480D66A6B065B1218ACD04 /* Pods-Assign01_LoadingViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EDE437BAB7D0A9B64D28D641AB18831 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */; };
+		7F0AAD2F8E01EAA6E6B3B1ACF7C0A4D3 /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */; };
+		820F3B2BFB2D7570271C7BB602BF810E /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */; };
+		87E612C7CE2B2F5953DFFE32C0C3959B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */; };
+		8BC42FAFED5029D49A2ECB67FB8861C9 /* Pods-Assign01_LoadingViewUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A7776E757C0EBBF1698A52B337D9E8 /* Pods-Assign01_LoadingViewUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F18F1A055784BBDB6E5C6D674D6E1DF /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */; };
+		90B79A73503A979707E268F401211F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		984171C228C5906749423D8FD46FC780 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */; };
+		9F129B8EB4DFD6804884C98F0C3CF0A8 /* Pods-Assign01_LoadingViewUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8637BCB2A9ADE8F5A173B9BF627882 /* Pods-Assign01_LoadingViewUITests-dummy.m */; };
+		A2A7A90F22750AC934A4F87579990B83 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */; };
+		A5BFB943657D84EC94A24756D52B1913 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */; };
+		A6EB3285D4620A500B57D3904025043F /* Pods-Assign01_LoadingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 188360A0259E356A9F83926658474B53 /* Pods-Assign01_LoadingView-dummy.m */; };
+		A7912B2C2D19CD77F5055286CD7DB0D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		B45E5B21716BBF9DB742FFE5D6994761 /* Pods-Assign01_LoadingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB6B4DD65C4BE677C1B1D778E2BC26C /* Pods-Assign01_LoadingView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C57B5C48FCD2EF32EE37550673640BF7 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */; };
+		DF40D12357662E6F149EB9739F4D542C /* Pods-Assign01_LoadingViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 557CD0F68662862789CA2D17E743947B /* Pods-Assign01_LoadingViewTests-dummy.m */; };
+		E51B576B12B14AA067F72990AF5A6AB8 /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB216869C5F0C9491C982F421540C216 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */; };
+		FCB1A7361740F011D930D96B70BEEC8F /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14AAF36A74C7B8A06B43E352615ACCFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19864AB8F7B8E9064740E008772C4404;
+			remoteInfo = DynamicColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CD992B66CD48FABD8EAE52299E14C0 /* Pods-Assign01_LoadingViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_LoadingViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Lab.swift"; path = "Sources/DynamicColor+Lab.swift"; sourceTree = "<group>"; };
+		0B82BEE16D4BDCF7E43F99E9AFDE3FB3 /* Pods-Assign01_LoadingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_LoadingView.modulemap"; sourceTree = "<group>"; };
+		0FD758B729DD2EC23574727E2E98D94D /* Pods-Assign01_LoadingViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		188360A0259E356A9F83926658474B53 /* Pods-Assign01_LoadingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_LoadingView-dummy.m"; sourceTree = "<group>"; };
+		1F670B0E495A0FE65CE16242011FAC21 /* Pods-Assign01_LoadingViewUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_LoadingViewUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Array.swift; sourceTree = "<group>"; };
+		246A693AA20277FD84B72C7D0993BF85 /* Pods-Assign01_LoadingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingView.release.xcconfig"; sourceTree = "<group>"; };
+		320900BE81F7EF0FEA1C6E988388DBCC /* Pods-Assign01_LoadingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingView.debug.xcconfig"; sourceTree = "<group>"; };
+		3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+RGBA.swift"; path = "Sources/DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
+		3C1F0B5D4D199F2B9CB73FD851364C78 /* Pods-Assign01_LoadingViewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingViewTests-frameworks.sh"; sourceTree = "<group>"; };
+		3D2C9BC06B5CAF3578F9168FB9BF1E62 /* Pods-Assign01_LoadingViewUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_LoadingViewUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
+		42C9022894F2824EE74A5AFD95D623B2 /* Pods-Assign01_LoadingViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_LoadingViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49A03502C54A532BCC322948011CAE6D /* Pods-Assign01_LoadingViewTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingViewTests-resources.sh"; sourceTree = "<group>"; };
+		4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSL.swift"; path = "Sources/DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		4BF00FF2EE8FB38188E465BB009FE461 /* Pods-Assign01_LoadingViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		4F967CE6E7F7EB64C5AF927275FC1BCB /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
+		4FA12C633383EB138667448F86DC35AB /* Pods-Assign01_LoadingViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_LoadingViewTests.modulemap"; sourceTree = "<group>"; };
+		54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		54EA8058D22EE4D6B689FA7847279273 /* Pods-Assign01_LoadingViewUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_LoadingViewUITests.modulemap"; sourceTree = "<group>"; };
+		557CD0F68662862789CA2D17E743947B /* Pods-Assign01_LoadingViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_LoadingViewTests-dummy.m"; sourceTree = "<group>"; };
+		56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Mixing.swift"; path = "Sources/DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
+		5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
+		64B77958246C9D391E33DC719F03DE3F /* Pods-Assign01_LoadingView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_LoadingView-acknowledgements.plist"; sourceTree = "<group>"; };
+		68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+XYZ.swift"; path = "Sources/DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
+		6E76144182480D66A6B065B1218ACD04 /* Pods-Assign01_LoadingViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_LoadingViewTests-umbrella.h"; sourceTree = "<group>"; };
+		73CEFB2361AED48ADE4C86F8CF2B83DA /* Pods-Assign01_LoadingViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColorSpace.swift; path = Sources/DynamicColorSpace.swift; sourceTree = "<group>"; };
+		76888C38F509149C289E1515C1B9B74F /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicColor.framework; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E42ACAC2A4DA614C3D2CCACBF470EE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B56475FC72FB084541A01FE06514E61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastDisplayContext.swift; path = Sources/ContrastDisplayContext.swift; sourceTree = "<group>"; };
+		8DB6B4DD65C4BE677C1B1D778E2BC26C /* Pods-Assign01_LoadingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_LoadingView-umbrella.h"; sourceTree = "<group>"; };
+		91D841848F092CE3D2C4132EF91A4E35 /* Pods-Assign01_LoadingView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingView-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C8637BCB2A9ADE8F5A173B9BF627882 /* Pods-Assign01_LoadingViewUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_LoadingViewUITests-dummy.m"; sourceTree = "<group>"; };
+		9E5D8F0DC81B971AEF52BF443AF69DED /* Pods_Assign01_LoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_LoadingView.framework; path = "Pods-Assign01_LoadingView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A364C3FDD2CA9EE054B8F466FB4745A0 /* Pods-Assign01_LoadingViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_LoadingViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5DB91A0FEB259FD9C50EC82BFA23E71 /* Pods-Assign01_LoadingViewUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingViewUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A93A5805B99FA0AF2ADEEAA91DD80B0D /* Pods-Assign01_LoadingView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_LoadingView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicGradient.swift; path = Sources/DynamicGradient.swift; sourceTree = "<group>"; };
+		B1814AA180FD681DA3B8361FC65A178C /* Pods_Assign01_LoadingViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_LoadingViewTests.framework; path = "Pods-Assign01_LoadingViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B83012D6F273C5E7F2A336CDEAD6A486 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9DF34BB148AC7A94F14E4EF1A597F14 /* Pods-Assign01_LoadingViewUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingViewUITests-resources.sh"; sourceTree = "<group>"; };
+		D0D9EA6F2922D5B0F7BD7E6B7CD7FE20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2891836F8275CB5074034E4B9411E91 /* Pods-Assign01_LoadingView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_LoadingView-resources.sh"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.xcconfig; sourceTree = "<group>"; };
+		E92C5D435F1891A1D8B46FB90A58E16A /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DynamicColor.modulemap; sourceTree = "<group>"; };
+		EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Deriving.swift"; path = "Sources/DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
+		F2A7776E757C0EBBF1698A52B337D9E8 /* Pods-Assign01_LoadingViewUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_LoadingViewUITests-umbrella.h"; sourceTree = "<group>"; };
+		F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSB.swift"; path = "Sources/DynamicColor+HSB.swift"; sourceTree = "<group>"; };
+		F89C9D1DB457A828E1706E39594F36A8 /* Pods_Assign01_LoadingViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_LoadingViewUITests.framework; path = "Pods-Assign01_LoadingViewUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D204C7860205F8AE2A4829C26927416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1276EC7B00B88E70FF52E8A25BB6C799 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42F04A990AEDCB0A5C550D470C1CE87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1712C1C628C3C01F2F5C14AA11844D5B /* Foundation.framework in Frameworks */,
+				A7912B2C2D19CD77F5055286CD7DB0D6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38D019987AEE80AA3B0CCBF50FD9F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90B79A73503A979707E268F401211F9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC04E13BBEA73A273AAB66D07D50E33E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1159A37C12A22705AD4B369A5810CF8D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1689560D93F1F8BE07BF6D78FC3C823B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E92C5D435F1891A1D8B46FB90A58E16A /* DynamicColor.modulemap */,
+				DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */,
+				5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */,
+				4F967CE6E7F7EB64C5AF927275FC1BCB /* DynamicColor-prefix.pch */,
+				54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */,
+				B83012D6F273C5E7F2A336CDEAD6A486 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DynamicColor";
+			sourceTree = "<group>";
+		};
+		1BF1F3B0AE9C2C0AAC189CAC6D4ECBF4 /* Pods-Assign01_LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				8B56475FC72FB084541A01FE06514E61 /* Info.plist */,
+				0B82BEE16D4BDCF7E43F99E9AFDE3FB3 /* Pods-Assign01_LoadingView.modulemap */,
+				A93A5805B99FA0AF2ADEEAA91DD80B0D /* Pods-Assign01_LoadingView-acknowledgements.markdown */,
+				64B77958246C9D391E33DC719F03DE3F /* Pods-Assign01_LoadingView-acknowledgements.plist */,
+				188360A0259E356A9F83926658474B53 /* Pods-Assign01_LoadingView-dummy.m */,
+				91D841848F092CE3D2C4132EF91A4E35 /* Pods-Assign01_LoadingView-frameworks.sh */,
+				D2891836F8275CB5074034E4B9411E91 /* Pods-Assign01_LoadingView-resources.sh */,
+				8DB6B4DD65C4BE677C1B1D778E2BC26C /* Pods-Assign01_LoadingView-umbrella.h */,
+				320900BE81F7EF0FEA1C6E988388DBCC /* Pods-Assign01_LoadingView.debug.xcconfig */,
+				246A693AA20277FD84B72C7D0993BF85 /* Pods-Assign01_LoadingView.release.xcconfig */,
+			);
+			name = "Pods-Assign01_LoadingView";
+			path = "Target Support Files/Pods-Assign01_LoadingView";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7083D58A6D948B8AFFE5DAE710677392 /* DynamicColor */ = {
+			isa = PBXGroup;
+			children = (
+				2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */,
+				8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */,
+				B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */,
+				EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */,
+				F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */,
+				4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */,
+				093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */,
+				56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */,
+				3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */,
+				68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */,
+				764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */,
+				ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */,
+				3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */,
+				4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */,
+				1689560D93F1F8BE07BF6D78FC3C823B /* Support Files */,
+			);
+			name = DynamicColor;
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
+		76E9A33FEEE9A6889F992FC70034ADC3 /* Pods-Assign01_LoadingViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0D9EA6F2922D5B0F7BD7E6B7CD7FE20 /* Info.plist */,
+				4FA12C633383EB138667448F86DC35AB /* Pods-Assign01_LoadingViewTests.modulemap */,
+				42C9022894F2824EE74A5AFD95D623B2 /* Pods-Assign01_LoadingViewTests-acknowledgements.markdown */,
+				02CD992B66CD48FABD8EAE52299E14C0 /* Pods-Assign01_LoadingViewTests-acknowledgements.plist */,
+				557CD0F68662862789CA2D17E743947B /* Pods-Assign01_LoadingViewTests-dummy.m */,
+				3C1F0B5D4D199F2B9CB73FD851364C78 /* Pods-Assign01_LoadingViewTests-frameworks.sh */,
+				49A03502C54A532BCC322948011CAE6D /* Pods-Assign01_LoadingViewTests-resources.sh */,
+				6E76144182480D66A6B065B1218ACD04 /* Pods-Assign01_LoadingViewTests-umbrella.h */,
+				73CEFB2361AED48ADE4C86F8CF2B83DA /* Pods-Assign01_LoadingViewTests.debug.xcconfig */,
+				0FD758B729DD2EC23574727E2E98D94D /* Pods-Assign01_LoadingViewTests.release.xcconfig */,
+			);
+			name = "Pods-Assign01_LoadingViewTests";
+			path = "Target Support Files/Pods-Assign01_LoadingViewTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D7976B6BD5315328B35ECABCEC3329AB /* Pods */,
+				A4D5719441CBAE0983E8EF073F68EF51 /* Products */,
+				FA95BAF3CA0F4C52A944878CB9ADF62C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D5719441CBAE0983E8EF073F68EF51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76888C38F509149C289E1515C1B9B74F /* DynamicColor.framework */,
+				9E5D8F0DC81B971AEF52BF443AF69DED /* Pods_Assign01_LoadingView.framework */,
+				B1814AA180FD681DA3B8361FC65A178C /* Pods_Assign01_LoadingViewTests.framework */,
+				F89C9D1DB457A828E1706E39594F36A8 /* Pods_Assign01_LoadingViewUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF81CFE3792A45762AB611BA814FC18A /* Pods-Assign01_LoadingViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E42ACAC2A4DA614C3D2CCACBF470EE8 /* Info.plist */,
+				54EA8058D22EE4D6B689FA7847279273 /* Pods-Assign01_LoadingViewUITests.modulemap */,
+				3D2C9BC06B5CAF3578F9168FB9BF1E62 /* Pods-Assign01_LoadingViewUITests-acknowledgements.markdown */,
+				1F670B0E495A0FE65CE16242011FAC21 /* Pods-Assign01_LoadingViewUITests-acknowledgements.plist */,
+				9C8637BCB2A9ADE8F5A173B9BF627882 /* Pods-Assign01_LoadingViewUITests-dummy.m */,
+				A5DB91A0FEB259FD9C50EC82BFA23E71 /* Pods-Assign01_LoadingViewUITests-frameworks.sh */,
+				B9DF34BB148AC7A94F14E4EF1A597F14 /* Pods-Assign01_LoadingViewUITests-resources.sh */,
+				F2A7776E757C0EBBF1698A52B337D9E8 /* Pods-Assign01_LoadingViewUITests-umbrella.h */,
+				A364C3FDD2CA9EE054B8F466FB4745A0 /* Pods-Assign01_LoadingViewUITests.debug.xcconfig */,
+				4BF00FF2EE8FB38188E465BB009FE461 /* Pods-Assign01_LoadingViewUITests.release.xcconfig */,
+			);
+			name = "Pods-Assign01_LoadingViewUITests";
+			path = "Target Support Files/Pods-Assign01_LoadingViewUITests";
+			sourceTree = "<group>";
+		};
+		D7976B6BD5315328B35ECABCEC3329AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7083D58A6D948B8AFFE5DAE710677392 /* DynamicColor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA95BAF3CA0F4C52A944878CB9ADF62C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF1F3B0AE9C2C0AAC189CAC6D4ECBF4 /* Pods-Assign01_LoadingView */,
+				76E9A33FEEE9A6889F992FC70034ADC3 /* Pods-Assign01_LoadingViewTests */,
+				CF81CFE3792A45762AB611BA814FC18A /* Pods-Assign01_LoadingViewUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		472DA672E367D90913A15F08341CE416 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40D1916697E2E43BF363DE2839C27D84 /* Pods-Assign01_LoadingViewTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2205445CDBE394628012A49B82D5D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51B576B12B14AA067F72990AF5A6AB8 /* DynamicColor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80ED2F3EF8FE3F489DC697881871F071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC42FAFED5029D49A2ECB67FB8861C9 /* Pods-Assign01_LoadingViewUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD331C28EBDEAB24243306231B79B4DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45E5B21716BBF9DB742FFE5D6994761 /* Pods-Assign01_LoadingView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19864AB8F7B8E9064740E008772C4404 /* DynamicColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13A9148002DFE2A8C3EDF3570108D7E /* Build configuration list for PBXNativeTarget "DynamicColor" */;
+			buildPhases = (
+				CABC519707612EFA68FE21EEEFEC9DFB /* Sources */,
+				E42F04A990AEDCB0A5C550D470C1CE87 /* Frameworks */,
+				6E2205445CDBE394628012A49B82D5D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColor;
+			productName = DynamicColor;
+			productReference = 76888C38F509149C289E1515C1B9B74F /* DynamicColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2FF3DE45A675438F4A619E316B0B3FF0 /* Pods-Assign01_LoadingViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47B157B7B3D6624CDEF49A624F1F8AC2 /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingViewTests" */;
+			buildPhases = (
+				E2D9FDCE0B3077C7351A1E024D60A896 /* Sources */,
+				FC04E13BBEA73A273AAB66D07D50E33E /* Frameworks */,
+				472DA672E367D90913A15F08341CE416 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Assign01_LoadingViewTests";
+			productName = "Pods-Assign01_LoadingViewTests";
+			productReference = B1814AA180FD681DA3B8361FC65A178C /* Pods_Assign01_LoadingViewTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A1E914F6DDCB71B918F22B06628136F8 /* Pods-Assign01_LoadingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F20CB1B03F2FE1D6EEDAC02D6AF2FCA /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingView" */;
+			buildPhases = (
+				38690134EE73D1E00118AB3E48952867 /* Sources */,
+				9D204C7860205F8AE2A4829C26927416 /* Frameworks */,
+				FD331C28EBDEAB24243306231B79B4DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73A8BA40FFF1DAF8ECB0954A14F64F15 /* PBXTargetDependency */,
+			);
+			name = "Pods-Assign01_LoadingView";
+			productName = "Pods-Assign01_LoadingView";
+			productReference = 9E5D8F0DC81B971AEF52BF443AF69DED /* Pods_Assign01_LoadingView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC99D3E4454FF4D44DFD99E17B169F9D /* Pods-Assign01_LoadingViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD6B1D21937A888002C85A85DB54C5C /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingViewUITests" */;
+			buildPhases = (
+				7A3465379C6C9A18EAD35C4E01155AD9 /* Sources */,
+				F38D019987AEE80AA3B0CCBF50FD9F82 /* Frameworks */,
+				80ED2F3EF8FE3F489DC697881871F071 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Assign01_LoadingViewUITests";
+			productName = "Pods-Assign01_LoadingViewUITests";
+			productReference = F89C9D1DB457A828E1706E39594F36A8 /* Pods_Assign01_LoadingViewUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A4D5719441CBAE0983E8EF073F68EF51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19864AB8F7B8E9064740E008772C4404 /* DynamicColor */,
+				A1E914F6DDCB71B918F22B06628136F8 /* Pods-Assign01_LoadingView */,
+				2FF3DE45A675438F4A619E316B0B3FF0 /* Pods-Assign01_LoadingViewTests */,
+				BC99D3E4454FF4D44DFD99E17B169F9D /* Pods-Assign01_LoadingViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38690134EE73D1E00118AB3E48952867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EB3285D4620A500B57D3904025043F /* Pods-Assign01_LoadingView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3465379C6C9A18EAD35C4E01155AD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F129B8EB4DFD6804884C98F0C3CF0A8 /* Pods-Assign01_LoadingViewUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABC519707612EFA68FE21EEEFEC9DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E612C7CE2B2F5953DFFE32C0C3959B /* Array.swift in Sources */,
+				13A64EFBFD04779380498D4E7B4A8FED /* ContrastDisplayContext.swift in Sources */,
+				7EDE437BAB7D0A9B64D28D641AB18831 /* DynamicColor+Deriving.swift in Sources */,
+				A2A7A90F22750AC934A4F87579990B83 /* DynamicColor+HSB.swift in Sources */,
+				2DDD385F3A80C4A6FFBC17C105372890 /* DynamicColor+HSL.swift in Sources */,
+				FCB1A7361740F011D930D96B70BEEC8F /* DynamicColor+Lab.swift in Sources */,
+				FB216869C5F0C9491C982F421540C216 /* DynamicColor+Mixing.swift in Sources */,
+				C57B5C48FCD2EF32EE37550673640BF7 /* DynamicColor+RGBA.swift in Sources */,
+				984171C228C5906749423D8FD46FC780 /* DynamicColor+XYZ.swift in Sources */,
+				7F0AAD2F8E01EAA6E6B3B1ACF7C0A4D3 /* DynamicColor-dummy.m in Sources */,
+				18C300717BE7EFF2AD4E9ACD24D82786 /* DynamicColor.swift in Sources */,
+				8F18F1A055784BBDB6E5C6D674D6E1DF /* DynamicColorSpace.swift in Sources */,
+				18BC048B42E116B31C759483F86580EA /* DynamicGradient.swift in Sources */,
+				820F3B2BFB2D7570271C7BB602BF810E /* HSL.swift in Sources */,
+				A5BFB943657D84EC94A24756D52B1913 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D9FDCE0B3077C7351A1E024D60A896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF40D12357662E6F149EB9739F4D542C /* Pods-Assign01_LoadingViewTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73A8BA40FFF1DAF8ECB0954A14F64F15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 19864AB8F7B8E9064740E008772C4404 /* DynamicColor */;
+			targetProxy = 14AAF36A74C7B8A06B43E352615ACCFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06746229F8224F1FC731333852B6CB4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD758B729DD2EC23574727E2E98D94D /* Pods-Assign01_LoadingViewTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingViewTests/Pods-Assign01_LoadingViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0779A0CF76A320A58FF7B46348995096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4494BA39EA90E3F882EAE52696F1F3E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246A693AA20277FD84B72C7D0993BF85 /* Pods-Assign01_LoadingView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingView/Pods-Assign01_LoadingView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		99999C04E6C84936D42B94C9992CD161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320900BE81F7EF0FEA1C6E988388DBCC /* Pods-Assign01_LoadingView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingView/Pods-Assign01_LoadingView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A81F069FA20FB24F0CABF1C30024DBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A364C3FDD2CA9EE054B8F466FB4745A0 /* Pods-Assign01_LoadingViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingViewUITests/Pods-Assign01_LoadingViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3B3DBF83F5DE3E36EF105737E5820A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF9E4951BCF8F68B9B3F3697B87864C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CEFB2361AED48ADE4C86F8CF2B83DA /* Pods-Assign01_LoadingViewTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingViewTests/Pods-Assign01_LoadingViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6B95C9D9D5FB28C532859A6619618E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF00FF2EE8FB38188E465BB009FE461 /* Pods-Assign01_LoadingViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_LoadingViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_LoadingViewUITests/Pods-Assign01_LoadingViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_LoadingViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47B157B7B3D6624CDEF49A624F1F8AC2 /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9E4951BCF8F68B9B3F3697B87864C5 /* Debug */,
+				06746229F8224F1FC731333852B6CB4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F20CB1B03F2FE1D6EEDAC02D6AF2FCA /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99999C04E6C84936D42B94C9992CD161 /* Debug */,
+				4494BA39EA90E3F882EAE52696F1F3E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E13A9148002DFE2A8C3EDF3570108D7E /* Build configuration list for PBXNativeTarget "DynamicColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0779A0CF76A320A58FF7B46348995096 /* Debug */,
+				B3B3DBF83F5DE3E36EF105737E5820A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD6B1D21937A888002C85A85DB54C5C /* Build configuration list for PBXNativeTarget "Pods-Assign01_LoadingViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A81F069FA20FB24F0CABF1C30024DBA5 /* Debug */,
+				E6B95C9D9D5FB28C532859A6619618E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

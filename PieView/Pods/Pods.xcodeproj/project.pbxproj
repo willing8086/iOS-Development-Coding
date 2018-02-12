@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0426D82DCFFB22402C31355AB1AD39E8 /* Pods-Assign01_PieViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B99E3EE493FC6D6E2CB8AE9DDC549842 /* Pods-Assign01_PieViewTests-dummy.m */; };
+		13A64EFBFD04779380498D4E7B4A8FED /* ContrastDisplayContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */; };
+		1712C1C628C3C01F2F5C14AA11844D5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		1846748AA97B6C3CFD5F23DAD1B64050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		18BC048B42E116B31C759483F86580EA /* DynamicGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */; };
+		18C300717BE7EFF2AD4E9ACD24D82786 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */; };
+		2056BF06E333AC06A9ACC432B72DBD65 /* Pods-Assign01_PieViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72AD0585942C25EF0F153C81BB5EEC55 /* Pods-Assign01_PieViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DDD385F3A80C4A6FFBC17C105372890 /* DynamicColor+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */; };
+		37DE88A4A5943AA400C999F9AA046DFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		48FCED18130F9D2E04AD7B3C165C6ED3 /* Pods-Assign01_PieViewUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FC8EB1D4E5F59F194429A280677492 /* Pods-Assign01_PieViewUITests-dummy.m */; };
+		7EDE437BAB7D0A9B64D28D641AB18831 /* DynamicColor+Deriving.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */; };
+		7F0AAD2F8E01EAA6E6B3B1ACF7C0A4D3 /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */; };
+		820F3B2BFB2D7570271C7BB602BF810E /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */; };
+		87E612C7CE2B2F5953DFFE32C0C3959B /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */; };
+		8F18F1A055784BBDB6E5C6D674D6E1DF /* DynamicColorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */; };
+		984171C228C5906749423D8FD46FC780 /* DynamicColor+XYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */; };
+		A2A7A90F22750AC934A4F87579990B83 /* DynamicColor+HSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */; };
+		A5BFB943657D84EC94A24756D52B1913 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */; };
+		A7912B2C2D19CD77F5055286CD7DB0D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		ADC1483A87DE59AA9461816D48924D11 /* Pods-Assign01_PieView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 587E7C84DA60C9E9F3516583C0C1957B /* Pods-Assign01_PieView-dummy.m */; };
+		C3F7274AF0AEA0E932C727A343699385 /* Pods-Assign01_PieView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67989AEDD182BDC4DC11A60842CF6F91 /* Pods-Assign01_PieView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C57B5C48FCD2EF32EE37550673640BF7 /* DynamicColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */; };
+		E39ABD8FA79409D44F268D52614EF2D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		E51B576B12B14AA067F72990AF5A6AB8 /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9CE66826E3CBD8DD4039F6A51508600 /* Pods-Assign01_PieViewUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE477FFD422696C167560B3BFEFF15E4 /* Pods-Assign01_PieViewUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB216869C5F0C9491C982F421540C216 /* DynamicColor+Mixing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */; };
+		FCB1A7361740F011D930D96B70BEEC8F /* DynamicColor+Lab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		363D82DA2AB2F716B748F9F8A01543CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19864AB8F7B8E9064740E008772C4404;
+			remoteInfo = DynamicColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FA17542D1C39579720393E6F932AD2 /* Pods-Assign01_PieViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		055C37E844CF28379DB33B749DE0EB70 /* Pods-Assign01_PieViewUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieViewUITests-resources.sh"; sourceTree = "<group>"; };
+		093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Lab.swift"; path = "Sources/DynamicColor+Lab.swift"; sourceTree = "<group>"; };
+		2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Array.swift; sourceTree = "<group>"; };
+		23FF5E3A76792C6ED3C43E56374ED19F /* Pods-Assign01_PieViewUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_PieViewUITests.modulemap"; sourceTree = "<group>"; };
+		26FF2CDB878D205598A216A33FE73CB7 /* Pods-Assign01_PieViewUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_PieViewUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+RGBA.swift"; path = "Sources/DynamicColor+RGBA.swift"; sourceTree = "<group>"; };
+		3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
+		49C25E95A115DFA243899E85F185F75B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FC8EB1D4E5F59F194429A280677492 /* Pods-Assign01_PieViewUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_PieViewUITests-dummy.m"; sourceTree = "<group>"; };
+		4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSL.swift"; path = "Sources/DynamicColor+HSL.swift"; sourceTree = "<group>"; };
+		4B779CE087480F1D96D2777E67A74E2E /* Pods-Assign01_PieViewUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieViewUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4C3EF38605E8710EE0A1154C2DFD34D3 /* Pods_Assign01_PieViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_PieViewUITests.framework; path = "Pods-Assign01_PieViewUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC63B66F81BCC68A43489D11B4EEBD8 /* Pods-Assign01_PieViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		4F967CE6E7F7EB64C5AF927275FC1BCB /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
+		4FD0EF7ECFF6239D29800135B24C90D2 /* Pods-Assign01_PieViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		5571FBD7D9A911D59D33D506BA869873 /* Pods-Assign01_PieViewTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieViewTests-resources.sh"; sourceTree = "<group>"; };
+		56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Mixing.swift"; path = "Sources/DynamicColor+Mixing.swift"; sourceTree = "<group>"; };
+		587E7C84DA60C9E9F3516583C0C1957B /* Pods-Assign01_PieView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_PieView-dummy.m"; sourceTree = "<group>"; };
+		5D8FA0095E84B5ACE619DF3632EA1BDF /* Pods-Assign01_PieView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieView.release.xcconfig"; sourceTree = "<group>"; };
+		5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
+		60BAC541E43971DB90CB422382316ED2 /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DynamicColor.framework; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		655856DF5E9B8355E07D9A080A5F4391 /* Pods-Assign01_PieView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieView-frameworks.sh"; sourceTree = "<group>"; };
+		67989AEDD182BDC4DC11A60842CF6F91 /* Pods-Assign01_PieView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_PieView-umbrella.h"; sourceTree = "<group>"; };
+		68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+XYZ.swift"; path = "Sources/DynamicColor+XYZ.swift"; sourceTree = "<group>"; };
+		72AD0585942C25EF0F153C81BB5EEC55 /* Pods-Assign01_PieViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_PieViewTests-umbrella.h"; sourceTree = "<group>"; };
+		764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColorSpace.swift; path = Sources/DynamicColorSpace.swift; sourceTree = "<group>"; };
+		7D6EA6336B974A2615F7E67A1A512AB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8043DE05CAB8A8A123E617CD0AA7AA13 /* Pods-Assign01_PieViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_PieViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContrastDisplayContext.swift; path = Sources/ContrastDisplayContext.swift; sourceTree = "<group>"; };
+		8FFEC8A10BAB7EA0E4B9FF02A092A652 /* Pods-Assign01_PieViewTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieViewTests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA667ACB77E765A0804CDD206DECDC5 /* Pods-Assign01_PieView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Assign01_PieView-acknowledgements.plist"; sourceTree = "<group>"; };
+		9EE62C10EF920AD475BE17D8127AF56F /* Pods-Assign01_PieViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_PieViewTests.modulemap"; sourceTree = "<group>"; };
+		9F8BB78A9D3C8676FF3D08B17EC74701 /* Pods-Assign01_PieView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Assign01_PieView-resources.sh"; sourceTree = "<group>"; };
+		A3C7C35CE9912640D26552F91B261AF7 /* Pods-Assign01_PieView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_PieView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicGradient.swift; path = Sources/DynamicGradient.swift; sourceTree = "<group>"; };
+		B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B83012D6F273C5E7F2A336CDEAD6A486 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99E3EE493FC6D6E2CB8AE9DDC549842 /* Pods-Assign01_PieViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Assign01_PieViewTests-dummy.m"; sourceTree = "<group>"; };
+		BF9279CB78301FC14DA1F1BB74F0DE9C /* Pods-Assign01_PieView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Assign01_PieView.modulemap"; sourceTree = "<group>"; };
+		C29C7F755C34913CFC8364DA352AC173 /* Pods-Assign01_PieViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CB91D08BF7D8DA6418EFDB6AAA6E9C0C /* Pods_Assign01_PieView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_PieView.framework; path = "Pods-Assign01_PieView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE477FFD422696C167560B3BFEFF15E4 /* Pods-Assign01_PieViewUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Assign01_PieViewUITests-umbrella.h"; sourceTree = "<group>"; };
+		D1C8C488BDE9202F191B3DB407412A3F /* Pods-Assign01_PieView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Assign01_PieView.debug.xcconfig"; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.xcconfig; sourceTree = "<group>"; };
+		DCE8D90133321ACCA408BED1E383C044 /* Pods-Assign01_PieViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_PieViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1BB93DD7535B2666709C0D4B69D90FA /* Pods-Assign01_PieViewUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Assign01_PieViewUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E92C5D435F1891A1D8B46FB90A58E16A /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DynamicColor.modulemap; sourceTree = "<group>"; };
+		EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+Deriving.swift"; path = "Sources/DynamicColor+Deriving.swift"; sourceTree = "<group>"; };
+		F0E5E47FD2A6379B22897E6FB639D8B5 /* Pods_Assign01_PieViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Assign01_PieViewTests.framework; path = "Pods-Assign01_PieViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F991D4AF48AAD81E49ED6032AE2ADD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DynamicColor+HSB.swift"; path = "Sources/DynamicColor+HSB.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A19F60603C1410CD3BA930F475E8F88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1846748AA97B6C3CFD5F23DAD1B64050 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7512822D9B3C016845E3AEBAB9E1B68B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39ABD8FA79409D44F268D52614EF2D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ADCF9DB66721E4C5ED0DD65D4E8B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DE88A4A5943AA400C999F9AA046DFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42F04A990AEDCB0A5C550D470C1CE87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1712C1C628C3C01F2F5C14AA11844D5B /* Foundation.framework in Frameworks */,
+				A7912B2C2D19CD77F5055286CD7DB0D6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1689560D93F1F8BE07BF6D78FC3C823B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E92C5D435F1891A1D8B46FB90A58E16A /* DynamicColor.modulemap */,
+				DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */,
+				5DCB1F03363FFA0FD9222695FCEEFA09 /* DynamicColor-dummy.m */,
+				4F967CE6E7F7EB64C5AF927275FC1BCB /* DynamicColor-prefix.pch */,
+				54D7F3EA9803EB869249C6B226831026 /* DynamicColor-umbrella.h */,
+				B83012D6F273C5E7F2A336CDEAD6A486 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DynamicColor";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		508F80C0F8FB43E033A5060C951DC8F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60BAC541E43971DB90CB422382316ED2 /* DynamicColor.framework */,
+				CB91D08BF7D8DA6418EFDB6AAA6E9C0C /* Pods_Assign01_PieView.framework */,
+				F0E5E47FD2A6379B22897E6FB639D8B5 /* Pods_Assign01_PieViewTests.framework */,
+				4C3EF38605E8710EE0A1154C2DFD34D3 /* Pods_Assign01_PieViewUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7083D58A6D948B8AFFE5DAE710677392 /* DynamicColor */ = {
+			isa = PBXGroup;
+			children = (
+				2138345E20620E6CD6DC2891DCC6EBC9 /* Array.swift */,
+				8CD924A3B9F46FB83C00D584645711E7 /* ContrastDisplayContext.swift */,
+				B2F36C6692DB1413B8D97DC4CA3FDB47 /* DynamicColor.swift */,
+				EB6BFCC7116CDD854A69E262A5497E13 /* DynamicColor+Deriving.swift */,
+				F69BA038EB1F4474CEF9B3B6D094BD20 /* DynamicColor+HSB.swift */,
+				4ADDA0DD7FAD7AF42403A4650691B419 /* DynamicColor+HSL.swift */,
+				093FB621DE2256E0BE5CBF36C1EFC983 /* DynamicColor+Lab.swift */,
+				56AEC6D351DC1E6F6EB44418FDAF7140 /* DynamicColor+Mixing.swift */,
+				3676C671E756AD315514E537CA69FA19 /* DynamicColor+RGBA.swift */,
+				68B329695F5A01427BEB90745A8A2984 /* DynamicColor+XYZ.swift */,
+				764977F57B6C6501013CEC4E2E890EDC /* DynamicColorSpace.swift */,
+				ABC65C9D83680D661C5B0DB699596E48 /* DynamicGradient.swift */,
+				3DCD79C9710A5FF4214DD10464DC7138 /* HSL.swift */,
+				4F93DFBC5B96F87447BB6DA46988D947 /* Utils.swift */,
+				1689560D93F1F8BE07BF6D78FC3C823B /* Support Files */,
+			);
+			name = DynamicColor;
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				D7976B6BD5315328B35ECABCEC3329AB /* Pods */,
+				508F80C0F8FB43E033A5060C951DC8F4 /* Products */,
+				BB13C6524E2D4AED96D98DB683B7ED74 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A1CAB4AEA30B6743B82EDD658A749B6B /* Pods-Assign01_PieViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7D6EA6336B974A2615F7E67A1A512AB5 /* Info.plist */,
+				23FF5E3A76792C6ED3C43E56374ED19F /* Pods-Assign01_PieViewUITests.modulemap */,
+				E1BB93DD7535B2666709C0D4B69D90FA /* Pods-Assign01_PieViewUITests-acknowledgements.markdown */,
+				26FF2CDB878D205598A216A33FE73CB7 /* Pods-Assign01_PieViewUITests-acknowledgements.plist */,
+				49FC8EB1D4E5F59F194429A280677492 /* Pods-Assign01_PieViewUITests-dummy.m */,
+				4B779CE087480F1D96D2777E67A74E2E /* Pods-Assign01_PieViewUITests-frameworks.sh */,
+				055C37E844CF28379DB33B749DE0EB70 /* Pods-Assign01_PieViewUITests-resources.sh */,
+				CE477FFD422696C167560B3BFEFF15E4 /* Pods-Assign01_PieViewUITests-umbrella.h */,
+				4DC63B66F81BCC68A43489D11B4EEBD8 /* Pods-Assign01_PieViewUITests.debug.xcconfig */,
+				C29C7F755C34913CFC8364DA352AC173 /* Pods-Assign01_PieViewUITests.release.xcconfig */,
+			);
+			name = "Pods-Assign01_PieViewUITests";
+			path = "Target Support Files/Pods-Assign01_PieViewUITests";
+			sourceTree = "<group>";
+		};
+		BB13C6524E2D4AED96D98DB683B7ED74 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E85256FA109EE9FB78C667ED4113401F /* Pods-Assign01_PieView */,
+				E0FBBA92BD767B8AB9F2BE824746F8AE /* Pods-Assign01_PieViewTests */,
+				A1CAB4AEA30B6743B82EDD658A749B6B /* Pods-Assign01_PieViewUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D7976B6BD5315328B35ECABCEC3329AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7083D58A6D948B8AFFE5DAE710677392 /* DynamicColor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0FBBA92BD767B8AB9F2BE824746F8AE /* Pods-Assign01_PieViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1F991D4AF48AAD81E49ED6032AE2ADD /* Info.plist */,
+				9EE62C10EF920AD475BE17D8127AF56F /* Pods-Assign01_PieViewTests.modulemap */,
+				DCE8D90133321ACCA408BED1E383C044 /* Pods-Assign01_PieViewTests-acknowledgements.markdown */,
+				8043DE05CAB8A8A123E617CD0AA7AA13 /* Pods-Assign01_PieViewTests-acknowledgements.plist */,
+				B99E3EE493FC6D6E2CB8AE9DDC549842 /* Pods-Assign01_PieViewTests-dummy.m */,
+				8FFEC8A10BAB7EA0E4B9FF02A092A652 /* Pods-Assign01_PieViewTests-frameworks.sh */,
+				5571FBD7D9A911D59D33D506BA869873 /* Pods-Assign01_PieViewTests-resources.sh */,
+				72AD0585942C25EF0F153C81BB5EEC55 /* Pods-Assign01_PieViewTests-umbrella.h */,
+				4FD0EF7ECFF6239D29800135B24C90D2 /* Pods-Assign01_PieViewTests.debug.xcconfig */,
+				01FA17542D1C39579720393E6F932AD2 /* Pods-Assign01_PieViewTests.release.xcconfig */,
+			);
+			name = "Pods-Assign01_PieViewTests";
+			path = "Target Support Files/Pods-Assign01_PieViewTests";
+			sourceTree = "<group>";
+		};
+		E85256FA109EE9FB78C667ED4113401F /* Pods-Assign01_PieView */ = {
+			isa = PBXGroup;
+			children = (
+				49C25E95A115DFA243899E85F185F75B /* Info.plist */,
+				BF9279CB78301FC14DA1F1BB74F0DE9C /* Pods-Assign01_PieView.modulemap */,
+				A3C7C35CE9912640D26552F91B261AF7 /* Pods-Assign01_PieView-acknowledgements.markdown */,
+				9EA667ACB77E765A0804CDD206DECDC5 /* Pods-Assign01_PieView-acknowledgements.plist */,
+				587E7C84DA60C9E9F3516583C0C1957B /* Pods-Assign01_PieView-dummy.m */,
+				655856DF5E9B8355E07D9A080A5F4391 /* Pods-Assign01_PieView-frameworks.sh */,
+				9F8BB78A9D3C8676FF3D08B17EC74701 /* Pods-Assign01_PieView-resources.sh */,
+				67989AEDD182BDC4DC11A60842CF6F91 /* Pods-Assign01_PieView-umbrella.h */,
+				D1C8C488BDE9202F191B3DB407412A3F /* Pods-Assign01_PieView.debug.xcconfig */,
+				5D8FA0095E84B5ACE619DF3632EA1BDF /* Pods-Assign01_PieView.release.xcconfig */,
+			);
+			name = "Pods-Assign01_PieView";
+			path = "Target Support Files/Pods-Assign01_PieView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		459479A3F87957967CF883C84FF53D03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9CE66826E3CBD8DD4039F6A51508600 /* Pods-Assign01_PieViewUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B90D5EDDA427500C97943483987AF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F7274AF0AEA0E932C727A343699385 /* Pods-Assign01_PieView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62DA88075E31B2C17AA3DD3D29C1D30A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2056BF06E333AC06A9ACC432B72DBD65 /* Pods-Assign01_PieViewTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2205445CDBE394628012A49B82D5D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51B576B12B14AA067F72990AF5A6AB8 /* DynamicColor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B69911387C5174C6B679B5D264E1F95 /* Pods-Assign01_PieViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90DA4F2308B7B39FF1AABED73AEC11E /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieViewTests" */;
+			buildPhases = (
+				961E32F212C75504F279C6B0E62479B3 /* Sources */,
+				91ADCF9DB66721E4C5ED0DD65D4E8B46 /* Frameworks */,
+				62DA88075E31B2C17AA3DD3D29C1D30A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Assign01_PieViewTests";
+			productName = "Pods-Assign01_PieViewTests";
+			productReference = F0E5E47FD2A6379B22897E6FB639D8B5 /* Pods_Assign01_PieViewTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19864AB8F7B8E9064740E008772C4404 /* DynamicColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E13A9148002DFE2A8C3EDF3570108D7E /* Build configuration list for PBXNativeTarget "DynamicColor" */;
+			buildPhases = (
+				CABC519707612EFA68FE21EEEFEC9DFB /* Sources */,
+				E42F04A990AEDCB0A5C550D470C1CE87 /* Frameworks */,
+				6E2205445CDBE394628012A49B82D5D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColor;
+			productName = DynamicColor;
+			productReference = 60BAC541E43971DB90CB422382316ED2 /* DynamicColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3496CC4FD47669612972433EAE207211 /* Pods-Assign01_PieView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FC04B7FE04560F467E44CDA3B4D5543 /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieView" */;
+			buildPhases = (
+				058E5D7EFDC60A415B029B3222C787E2 /* Sources */,
+				7512822D9B3C016845E3AEBAB9E1B68B /* Frameworks */,
+				62B90D5EDDA427500C97943483987AF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CB9EDDE9AB8975CD219C90DF2B51CE3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Assign01_PieView";
+			productName = "Pods-Assign01_PieView";
+			productReference = CB91D08BF7D8DA6418EFDB6AAA6E9C0C /* Pods_Assign01_PieView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED2E6081E76A089B91FCD8ADD840EB78 /* Pods-Assign01_PieViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F25B49B00C4D07BF5107AF7A062A764 /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieViewUITests" */;
+			buildPhases = (
+				3DB706A5D59CA05255EE056037B8F380 /* Sources */,
+				3A19F60603C1410CD3BA930F475E8F88 /* Frameworks */,
+				459479A3F87957967CF883C84FF53D03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Assign01_PieViewUITests";
+			productName = "Pods-Assign01_PieViewUITests";
+			productReference = 4C3EF38605E8710EE0A1154C2DFD34D3 /* Pods_Assign01_PieViewUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 508F80C0F8FB43E033A5060C951DC8F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19864AB8F7B8E9064740E008772C4404 /* DynamicColor */,
+				3496CC4FD47669612972433EAE207211 /* Pods-Assign01_PieView */,
+				0B69911387C5174C6B679B5D264E1F95 /* Pods-Assign01_PieViewTests */,
+				ED2E6081E76A089B91FCD8ADD840EB78 /* Pods-Assign01_PieViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		058E5D7EFDC60A415B029B3222C787E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC1483A87DE59AA9461816D48924D11 /* Pods-Assign01_PieView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB706A5D59CA05255EE056037B8F380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FCED18130F9D2E04AD7B3C165C6ED3 /* Pods-Assign01_PieViewUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961E32F212C75504F279C6B0E62479B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0426D82DCFFB22402C31355AB1AD39E8 /* Pods-Assign01_PieViewTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CABC519707612EFA68FE21EEEFEC9DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E612C7CE2B2F5953DFFE32C0C3959B /* Array.swift in Sources */,
+				13A64EFBFD04779380498D4E7B4A8FED /* ContrastDisplayContext.swift in Sources */,
+				7EDE437BAB7D0A9B64D28D641AB18831 /* DynamicColor+Deriving.swift in Sources */,
+				A2A7A90F22750AC934A4F87579990B83 /* DynamicColor+HSB.swift in Sources */,
+				2DDD385F3A80C4A6FFBC17C105372890 /* DynamicColor+HSL.swift in Sources */,
+				FCB1A7361740F011D930D96B70BEEC8F /* DynamicColor+Lab.swift in Sources */,
+				FB216869C5F0C9491C982F421540C216 /* DynamicColor+Mixing.swift in Sources */,
+				C57B5C48FCD2EF32EE37550673640BF7 /* DynamicColor+RGBA.swift in Sources */,
+				984171C228C5906749423D8FD46FC780 /* DynamicColor+XYZ.swift in Sources */,
+				7F0AAD2F8E01EAA6E6B3B1ACF7C0A4D3 /* DynamicColor-dummy.m in Sources */,
+				18C300717BE7EFF2AD4E9ACD24D82786 /* DynamicColor.swift in Sources */,
+				8F18F1A055784BBDB6E5C6D674D6E1DF /* DynamicColorSpace.swift in Sources */,
+				18BC048B42E116B31C759483F86580EA /* DynamicGradient.swift in Sources */,
+				820F3B2BFB2D7570271C7BB602BF810E /* HSL.swift in Sources */,
+				A5BFB943657D84EC94A24756D52B1913 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CB9EDDE9AB8975CD219C90DF2B51CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 19864AB8F7B8E9064740E008772C4404 /* DynamicColor */;
+			targetProxy = 363D82DA2AB2F716B748F9F8A01543CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0779A0CF76A320A58FF7B46348995096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		233720437CF4D08D86DBCE3BA0495910 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C8C488BDE9202F191B3DB407412A3F /* Pods-Assign01_PieView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieView/Pods-Assign01_PieView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		40574D33859C8EDD46D2E931A24FD492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC63B66F81BCC68A43489D11B4EEBD8 /* Pods-Assign01_PieViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieViewUITests/Pods-Assign01_PieViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B19651AC2F5E822518B4239ADF35AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29C7F755C34913CFC8364DA352AC173 /* Pods-Assign01_PieViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieViewUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieViewUITests/Pods-Assign01_PieViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieViewUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9DE8F1B82618BBF4307C116BA7C94152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FA17542D1C39579720393E6F932AD2 /* Pods-Assign01_PieViewTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieViewTests/Pods-Assign01_PieViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A70965ABBDC99643AC37F7CA0C5F98D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FD0EF7ECFF6239D29800135B24C90D2 /* Pods-Assign01_PieViewTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieViewTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieViewTests/Pods-Assign01_PieViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieViewTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3B3DBF83F5DE3E36EF105737E5820A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB875E63DDFCEC4B13D1EC77FA2DA524 /* DynamicColor.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0B481A6D151F51B1F65386CE50E227D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8FA0095E84B5ACE619DF3632EA1BDF /* Pods-Assign01_PieView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Assign01_PieView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Assign01_PieView/Pods-Assign01_PieView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Assign01_PieView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
+				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F25B49B00C4D07BF5107AF7A062A764 /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40574D33859C8EDD46D2E931A24FD492 /* Debug */,
+				4B19651AC2F5E822518B4239ADF35AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FC04B7FE04560F467E44CDA3B4D5543 /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233720437CF4D08D86DBCE3BA0495910 /* Debug */,
+				C0B481A6D151F51B1F65386CE50E227D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E13A9148002DFE2A8C3EDF3570108D7E /* Build configuration list for PBXNativeTarget "DynamicColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0779A0CF76A320A58FF7B46348995096 /* Debug */,
+				B3B3DBF83F5DE3E36EF105737E5820A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90DA4F2308B7B39FF1AABED73AEC11E /* Build configuration list for PBXNativeTarget "Pods-Assign01_PieViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70965ABBDC99643AC37F7CA0C5F98D6 /* Debug */,
+				9DE8F1B82618BBF4307C116BA7C94152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

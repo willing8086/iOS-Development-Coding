@@ -1,0 +1,23 @@
+project 'Assign01_PieView.xcodeproj'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Assign01_PieView' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Assign01_PieView
+  pod 'DynamicColor', '~> 4.0.2'
+
+  target 'Assign01_PieViewTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Assign01_PieViewUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
