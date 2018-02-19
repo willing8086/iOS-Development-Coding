@@ -14,7 +14,6 @@
 		F6A6305B203B66B30062A01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6A63059203B66B30062A01A /* LaunchScreen.storyboard */; };
 		F6A63066203B66B30062A01A /* PhotoCutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A63065203B66B30062A01A /* PhotoCutterTests.swift */; };
 		F6A63071203B66B30062A01A /* PhotoCutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A63070203B66B30062A01A /* PhotoCutterUITests.swift */; };
-		F6A63081203B6F7B0062A01A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A63080203B6F7B0062A01A /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		F6A6306C203B66B30062A01A /* PhotoCutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A63070203B66B30062A01A /* PhotoCutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCutterUITests.swift; sourceTree = "<group>"; };
 		F6A63072203B66B30062A01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6A63080203B6F7B0062A01A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +99,6 @@
 			children = (
 				F6A63050203B66B30062A01A /* AppDelegate.swift */,
 				F6A63052203B66B30062A01A /* ViewController.swift */,
-				F6A63080203B6F7B0062A01A /* CollectionViewCell.swift */,
 				F6A63054203B66B30062A01A /* Main.storyboard */,
 				F6A63057203B66B30062A01A /* Assets.xcassets */,
 				F6A63059203B66B30062A01A /* LaunchScreen.storyboard */,
@@ -263,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A63053203B66B30062A01A /* ViewController.swift in Sources */,
-				F6A63081203B6F7B0062A01A /* CollectionViewCell.swift in Sources */,
 				F6A63051203B66B30062A01A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

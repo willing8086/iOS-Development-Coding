@@ -8,33 +8,45 @@
 
 import UIKit
 
-private let reuseIdentifier = "My Cell"
-
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-  
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         
+        let upLineLayer = CAShapeLayer()
+        upLineLayer.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 302, height: 1)).cgPath
+        upLineLayer.fillColor = UIColor.white.cgColor
+        upLineLayer.frame = CGRect(x: 0, y: 100, width: 302, height: 1)
+        imageView.layer.addSublayer(upLineLayer)
+
+        let downLineLayer = CAShapeLayer()
+        downLineLayer.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 302, height: 1)).cgPath
+        downLineLayer.fillColor = UIColor.white.cgColor
+        downLineLayer.frame = CGRect(x: 0, y: 200, width: 302, height: 1)
+        imageView.layer.addSublayer(downLineLayer)
+
+        let leftLineLayer = CAShapeLayer()
+        leftLineLayer.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 1, height: 302)).cgPath
+        leftLineLayer.fillColor = UIColor.white.cgColor
+        leftLineLayer.frame = CGRect(x: 100, y: 0, width: 1, height: 302)
+        imageView.layer.addSublayer(leftLineLayer)
+
+        let rightLineLayer = CAShapeLayer()
+        rightLineLayer.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 1, height: 302)).cgPath
+        rightLineLayer.fillColor = UIColor.white.cgColor
+        rightLineLayer.frame = CGRect(x: 200, y: 0, width: 1, height: 302)
+        imageView.layer.addSublayer(rightLineLayer)
         
-        return cell
     }
 
     @IBAction func importPicture(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func savePictures(_ sender: Any) {
