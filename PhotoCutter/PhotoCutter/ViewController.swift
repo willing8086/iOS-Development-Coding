@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -20,6 +21,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let marginY = imageView.frame.minY
         let width = CGFloat(300)
         let height = CGFloat(300)
+        
+        hasImage = false
         
         let upLineLayer = CAShapeLayer()
         upLineLayer.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: width, height: 1)).cgPath
@@ -45,6 +48,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         rightLineLayer.frame = CGRect(x: marginX + width * 2 / 3, y: marginY, width: 1, height: height)
         self.view.layer.addSublayer(rightLineLayer)
         
+    }
+    
+    var hasImage: Bool = false {
+        didSet {
+            if hasImage == false {
+                saveButton.isEnabled = false
+            } else {
+                saveButton.isEnabled = true
+            }
+        }
     }
 
     @IBAction func importPicture(_ sender: Any) {
@@ -76,6 +89,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         finishedAlert.addAction(UIAlertAction(title: "好的", style: .cancel, handler: nil))
         finishedAlert.view.tintColor = UIColor.red
         imageView.image = nil
+        hasImage = false
         
         self.present(finishedAlert, animated: true, completion: nil)
     }
@@ -83,6 +97,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imageView.image = (info[UIImagePickerControllerOriginalImage] as? UIImage)
         picker.dismiss(animated: true, completion: nil)
+        hasImage = true
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

@@ -49,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="2YJ-mC-qla" id="IhS-Q1-2Il"/>
+                        <outlet property="saveButton" destination="heR-hA-L1y" id="Rcf-fk-kCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
