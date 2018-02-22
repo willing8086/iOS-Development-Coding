@@ -88,10 +88,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let finishedAlert = UIAlertController(title: "保存好了", message: nil, preferredStyle: .alert)
         finishedAlert.addAction(UIAlertAction(title: "好的", style: .cancel, handler: nil))
         finishedAlert.view.tintColor = UIColor.red
+        self.present(finishedAlert, animated: true, completion: nil)
+        
         imageView.image = nil
         hasImage = false
-        
-        self.present(finishedAlert, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
