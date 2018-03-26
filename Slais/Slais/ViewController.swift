@@ -129,6 +129,8 @@ class ViewController: UIViewController {
         }
     }
 
+    // MARK: Pick Section and Show Focus Anchors
+    
     private var startPoint = CGPoint(x: 0, y: 0)
     private var endPoint = CGPoint(x: 0, y: 0)
     private var selectedRange = Range(x: 0, y: 0, width: 0, height: 0)
@@ -136,33 +138,35 @@ class ViewController: UIViewController {
     @IBAction func pickSection(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
         case .began:
-            isSelected = false
+            anchorHide()
             startPoint = sender.location(in: centerView)
+            anchorPrepare(point: startPoint)
         case .changed:
-            isSelected = true
             endPoint = sender.location(in: centerView)
-            selectedRange = touchLocatedInRange(startPoint: startPoint, endPoint: endPoint)
-            isPickedSectionChanged = true
+            anchorFocus(startPoint: startPoint, endPoint: endPoint)
         case .ended:
-            isSelected = true
             endPoint = sender.location(in: centerView)
-            selectedRange = touchLocatedInRange(startPoint: startPoint, endPoint: endPoint)
-            isPickedSectionChanged = true
+            anchorFocus(startPoint: startPoint, endPoint: endPoint)
         default:
             break
         }
     }
     
     func anchorHide() {
-        
+        CATransaction.setDisableActions(true)
+        isSelected = false
     }
     
-    func anchorPrepare(range: Range) {
-        
+    func anchorPrepare(point: CGPoint) {
+        CATransaction.setDisableActions(true)
+        selectedRange = touchLocatedInRange(startPoint: point, endPoint: point)
+        isPickedSectionChanged = true
     }
     
-    func anchorFocus() {
-        
+    func anchorFocus(startPoint: CGPoint, endPoint: CGPoint) {
+        isSelected = true
+        selectedRange = touchLocatedInRange(startPoint: startPoint, endPoint: endPoint)
+        isPickedSectionChanged = true
     }
     
     @IBAction func deselectSection(_ sender: Any) {
