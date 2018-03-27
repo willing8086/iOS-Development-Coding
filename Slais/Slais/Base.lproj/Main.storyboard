@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,11 +11,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slais" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5T-oK-IW9" customClass="CenterView" customModule="Slais" customModuleProvider="target">
-                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <rect key="frame" x="148" y="149.5" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -29,11 +25,11 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="916-73-WMG">
-                                <rect key="frame" x="16" y="491" width="343" height="60"/>
+                                <rect key="frame" x="128.5" y="436.5" width="343" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o01-hD-9W8">
-                                <rect key="frame" x="16" y="559" width="343" height="60"/>
+                                <rect key="frame" x="128.5" y="497" width="343" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
@@ -58,7 +54,7 @@
                 </panGestureRecognizer>
                 <tapGestureRecognizer id="pAX-So-NjN">
                     <connections>
-                        <action selector="deselectSection:" destination="BYZ-38-t0r" id="3C8-Rh-uox"/>
+                        <action selector="selectOrDeselectSection:" destination="BYZ-38-t0r" id="3C8-Rh-uox"/>
                     </connections>
                 </tapGestureRecognizer>
                 <pinchGestureRecognizer id="18s-Bl-fMa">

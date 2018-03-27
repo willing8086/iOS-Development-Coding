@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Range {
+struct Range {
     var x: Int
     var y: Int
     var width: Int
@@ -26,6 +26,4 @@ extension Range: CustomDebugStringConvertible {
     var debugDescription: String {
         return "x: \(x), y: \(y), width: \(width), height: \(height)"
     }
-    
-    
 }

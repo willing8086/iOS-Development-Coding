@@ -129,7 +129,7 @@ class ViewController: UIViewController {
         }
     }
 
-    // MARK: Pick Section and Show Focus Anchors
+    // MARK: Pick section and Show focus anchors
     
     private var startPoint = CGPoint(x: 0, y: 0)
     private var endPoint = CGPoint(x: 0, y: 0)
@@ -152,6 +152,25 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: Tap Gesture Action
+    
+    @IBAction func selectOrDeselectSection(_ sender: UITapGestureRecognizer) {
+        let rect = centerView.frame
+        let isTouchInCenterView = pointInRange(point: sender.location(in: self.view), rect: rect)
+        
+        if !isTouchInCenterView {
+            isSelected = false
+        } else {
+            anchorHide()
+            let point = sender.location(in: centerView)
+            anchorPrepare(point: point)
+            anchorFocus(startPoint: point, endPoint: point)
+        }
+        
+    }
+    
+    // MARK: Prepare for anchor focusing
+    
     func anchorHide() {
         CATransaction.setDisableActions(true)
         isSelected = false
@@ -167,10 +186,6 @@ class ViewController: UIViewController {
         isSelected = true
         selectedRange = touchLocatedInRange(startPoint: startPoint, endPoint: endPoint)
         isPickedSectionChanged = true
-    }
-    
-    @IBAction func deselectSection(_ sender: Any) {
-        isSelected = false
     }
     
     @IBAction func pictureContentEdit(_ sender: UIPinchGestureRecognizer) {
@@ -230,6 +245,14 @@ class ViewController: UIViewController {
                           height: range.height * scale)
         
         return rect
+    }
+    
+    func pointInRange(point: CGPoint, rect: CGRect) -> Bool{
+        if point.x >= rect.minX && point.x <= rect.maxX
+            && point.y >= rect.minY && point.y <= rect.maxY {
+            return true
+        }
+        return false
     }
     
     override func didReceiveMemoryWarning() {
